@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Contact Management System</title>
+</head>
+<body>
+    <header class="Title-bar">
+         <h1>Contact Management System</h1>
+    </header>
+    <div class="main-container container row">
+        <div class="left-panel container col">
+            <div class="controls container row">
+                <div class="search-bar row">
+                    <button class="filter-all"><i class="fa fa-sort-alpha-asc"></i></button>
+                    <input type="text" name="txt_search" id="txt_search" placeholder="Search" onchange="search_contact()">
+                </div>
+                <button class="btn-add-contact"><i class="fa fa-plus"></i></button>
+            </div>
+            
+            <div class="contact-list container col">
+                <div class="contact-list-item container row" id="1" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="2" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+                <div class="contact-list-item container row" id="3" onclick="load_contact_details(this.id)">
+                    <img src="./data/contact_photos/user.png" alt="" class="contact-photo">
+                    <h3 class="contact-name">Name here</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="details-container  col">
+            <div class="contact-details container col">
+
+                <div class="empty-note col">
+                    <img src="./assets/images/contact-book.png" alt="" >
+                    <h3>No contact selected</h3>
+                </div>
+               
+                <!-- <form>
+                    <div class="controls">
+                        <button class="btn-back"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+   
+                    <table class="details">
+                        <tr>
+                            <td class="detail-caption">Full Name</td>
+                            <td class="detail-content"><input type="text" name="txt_full_name" id="txt_full_name"></td>
+                        </tr>
+                        <tr>
+                            <td class="detail-caption">Mobile number</td>
+                            <td class="detail-content"><input type="text" name="txt_mobile_number" id="txt_mobile_number"></td>
+                        </tr>
+                        <tr>
+                            <td class="detail-caption">Email Address</td>
+                            <td class="detail-content"><input type="email" name="email_address" id="email_address"></td>
+                        </tr>
+                        <tr>
+                            <td class="detail-caption">Home Address</td>
+                            <td class="detail-content">
+                                <textarea name="txt_home_address" id="txt_home_address" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="controls">
+                        <button>Clear</button>
+                        <button onclick="">Save</button>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

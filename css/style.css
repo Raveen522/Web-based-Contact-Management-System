@@ -1,0 +1,282 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Scroll bar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0d50cb;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #043db1;
+}
+/* -------------- */
+
+/* Basic component styles */
+input[type=text], input[type=email], textarea{
+    width: 250px;
+    height: 35px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.421);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    transition: all ease-in-out 0.2s;
+}
+textarea{
+    resize:none;
+    height: 70px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    border: 2px solid rgba(19, 0, 189, 0.579);
+}
+
+button{
+    height: 30px;
+    margin-right: 5px;
+    padding: 0 15px 0 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: rgb(0, 132, 255);
+    box-shadow: 0px 0px 2px rgba(32, 32, 32, 0.518);
+    color: white;
+    font-weight: 600;
+    transition: all ease-in-out 0.1s;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+button:disabled{
+    opacity: 10%;
+}
+
+.vl {
+    border-left: 2px solid rgb(0, 79, 188);
+    height: 100%;
+}
+/* ----------------------------------- */
+
+/* Basic layout styles */
+.container{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/* ---------------------------------- */
+
+
+.Title-bar{
+    position: sticky;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(to bottom right,rgb(121, 32, 255),rgb(2, 164, 218));
+    color: white;
+}
+
+.Title-bar h1{
+    margin: 0;
+}
+.Title-bar .logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.main-container{ 
+    width: 95%;
+    height: 85%;
+    margin: 10px auto 50px auto;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.227);
+}
+
+.left-panel{ 
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.controls{
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: rgba(205, 205, 205, 0.277);
+}
+
+
+/*styles for side panel controls*/
+.controls .filter-all,.btn-add-contact{ 
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.504);
+    transition: all ease-in-out 0.2s;
+}
+
+.controls .filter-all:hover, .btn-add-contact:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.344);
+}
+
+.controls #txt_search{
+    border: 2px solid rgba(0, 0, 0, 0.223);
+    transition: all ease-in-out 0.2s;
+}
+.controls #txt_search:focus{
+    border: 2px solid rgba(0, 0, 0, 0.384);
+}
+/* ---------------------------------- */
+
+
+/* contact list styles */
+.contact-list{
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(205, 205, 205, 0.277);
+}
+/* -------------------------- */
+
+
+/* contact list item styles */
+.contact-list-item{
+    width: 70%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(32, 32, 32, 0.227);
+    transition: all ease-in-out 0.1s;
+}
+
+.contact-list-item:hover{
+    background: rgb(248, 248, 248);
+    box-shadow: 0px 0px 5px rgba(32, 32, 32, 0.456);
+    cursor: pointer;
+}
+
+.contact-list-item .contact-photo{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+/* ---------------------- */
+
+/* details pane layout and styles */
+.details-container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(205, 205, 205, 0.277);
+}
+
+.details-container .controls{
+    border-radius: 10px;
+    background: transparent;
+}
+
+.details-container input[type=text], input[type=email], textarea{
+    width: 200px;
+    margin-left: 15px;
+}
+.contact-details{
+    width: 70%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(26, 26, 26, 0.177);
+}
+
+.btn-back{
+    outline: none;
+    border: none;
+    margin-right: 0;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    transition: all ease-in-out 0.1s;
+    box-shadow: none;
+}
+
+.btn-back:hover{
+    transform: scale(1.1);
+}
+
+.basic-details-container{
+    width: 90%;
+    height: 40px;
+    align-items: center;
+    background: white;
+}
+
+.basic-details-container .contact-title h3{
+    margin: 0;
+}
+
+.details{
+    height: 300px;
+}
+
+.empty-note{
+    align-items: center;
+}
+.empty-note img{
+    width: 60px;
+}
